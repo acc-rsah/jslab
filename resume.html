@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by job title...">
+        <button onclick="filterResumes()">Search</button>
+    </div>
+
+    <div class="resume-container">
+        <div id="resumeDetails"></div>
+        <div class="navigation">
+            <button id="prevButton" onclick="navigateResume(-1)">Previous</button>
+            <button id="nextButton" onclick="navigateResume(1)">Next</button>
+        </div>
+        <p id="noResultMessage"></p>
+    </div>
+
+    <script src="js/resumeScript.js"></script>
+</body>
+
+</html>
