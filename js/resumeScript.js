@@ -525,5 +525,5 @@ function filterResumes() {
 }
 
 window.onload = () => {
-    displayResume(0); // Initially display the first resume
+    displayResume(0);
 };
